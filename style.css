@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+
+
+}
+.container11{
+    height: 400px;
+    width:600px;
+    margin-left: 420px;
+    padding: 20px;
+    padding-bottom: 0;
+
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: bisque;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ 
+    width: 100%;
+
+}
+.navbar h1{
+    color: black;
+}
+
+.navbarlinks {
+    display: flex;
+    column-gap: 20px;
+    margin-right: 15px;
+
+
+
+}
+
+.navbarlink {
+    text-decoration: none;
+    color: black;
+}
+
+.navbarlinks a:hover {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.toggleicon {
+    display: none;
+}
+
+.sidenavbar {
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    display: none;
+    transition: 2s;
+
+}
+
+.sidenavbarlinks {
+    padding: 10px;
+}
+
+.sidenavbarlink {
+    display: flex;
+    padding: 20px;
+    color: white;
+}
+
+.cancelicon {
+    margin-left: 90%;
+    top: 10px;
+    color: white;
+
+}
+
+.sidenavbarlinks a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 100px;
+
+}
+
+
+.container1 h1,
+h4 {
+    padding-bottom: 10px;
+    color: blue;
+
+}
+
+
+.shopnowbtn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+
+.c1 {
+    display: flex;
+    
+   justify-content: space-around;
+   color: black;
+   flex-wrap: wrap;
+  }
+
+  .c1 h2{
+    
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+.searchform {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+
+}
+
+.search{
+    border: transparent;
+    outline: none;
+}
+
+.search::placeholder {
+    font-size: 15px;
+    color: black;
+
+}
+
+.products {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    row-gap: 50px;
+   
+}
+
+.productsbox {
+    align-items: center;
+    margin-left: 80px;
+    position: relative;
+   
+    
+
+}
+.collectionshopnow{
+    position: absolute;
+    top:60%;
+    left: 16%;
+    background-color: white;
+   color: green ;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+    font-weight: 500;
+}
+
+.c2{
+    display: flex;
+    
+    justify-content: space-around;
+    padding: 20px;
+    color: black;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+
+    
+}
+.c2 div{
+    background-color: bisque;
+    height:150px;
+    width: 300px;
+    align-items: center;
+    padding: 40px;
+   
+}
+.c2 i{
+    
+    width: 30px;
+}
+.c2 h3{
+    color: green;
+}
+.container3 h1,p{
+    color: black;
+    margin-left: 10px;
+}
+
+.container4 h1,p{
+    color: black;
+    margin-left: 10px;
+}
+
+
+
+.footer{
+    background-color: black;
+text-align: center;
+    padding: 30px;
+    
+   
+}
+.footer h4,div{
+    color: white;
+}
+.contactformdiv
+{
+    padding: 20px;
+}
+.contactform{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    width:80%;
+   flex-direction: column;
+   height: 500px;
+   width: 800px;
+   background-color:bisque;
+   border: 2px solid black;
+   margin-left: 20%
+}
+.contactforminput{
+    display: flex;
+    width: 100%;
+    padding: 30px;
+
+}
+.contactform label
+{
+    color:black;
+    
+}
+.contactforminput input{
+    width: 80%;
+    height: 30px;
+    margin-left: 20px;
+}
+.contactform button{
+    padding: 10px 80px;
+    background-color: green;
+}
+
+
+.cartbtn{
+
+
+    position: absolute;
+    top:50%;
+    left: 16%;
+    background-color: white;
+   color: green ;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+    font-weight: 500;
+}
+
+
+
+#list{
+    height: 300px;
+    width:90%;
+   
+    border: 2px solid black;
+    background-color: bisque;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 600px) {
+
+
+    .navbarlinks {
+        display: none;
+    }
+
+    .toggleicon {
+        display: block;
+
+    }
+    .container1 img{
+        display: none;
+    }
+
+    .searchform{
+        width: 60%;
+    }
+    .contactform{
+        display: flex;
+        text-align: center;
+        justify-content: left;
+        width:50%;
+       flex-direction: column;
+       height: 200px;
+       width: 250px;
+       background-color:bisque;
+       border: 2px solid black;
+       margin-left: 10%;
+       padding:10px;
+    }
+    .contactforminput{
+        display: flex;
+        width: 80%;
+        padding: 10px;
+    
+    }
+    .contactform label
+    {
+        color:black;
+        
+    }
+    .contactforminput input{
+        width: 80%;
+        height: 30px;
+        
+    }
+    .contactform button{
+        padding: 5px 40px;
+        background-color: green;
+
+
+    }
+
+.container11{
+    height: 400px;
+    width:600px;
+    margin-left: 120px;
+    padding: 20px;
+    padding-bottom: 0;    
+}
+
+   footer{
+             align-items: center;
+   }
+
+
+
+
+}

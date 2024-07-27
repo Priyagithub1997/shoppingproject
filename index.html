@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top">
+        <div class="navbardiv">
+            <h1>Shopping</h1>
+        </div>
+        <div class="navbarlinks">
+
+
+
+            <a class="navbarlink" href="index.html">Home</a>
+            <a class="navbarlink" href="collection.html"> Collections</a>
+            <a class="navbarlink" href="#mycart">My Cart</a>
+
+
+        </div>
+        <div class="toggleicon" onclick="shownavbar()">
+            <i class="fa-solid fa-bars "></i>
+        </div>
+
+    </nav>
+    <div class="sidenavbar">
+        <div class="cancelicon" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="sidenavbarlinks">
+
+
+
+            <a class="sidenavbarlink" href="index.html">Home</a>
+            <a class="sidenavbarlink" href="collection.html"> Collections</a>
+            <a class="sidenavbarlink" href="#mycart">My Cart</a>
+
+        </div>
+    </div>
+    <div class="container1">
+        <div>
+            <h1>Level up your Style</h1>
+            <h4> With our Stunning Collections</h4>
+            <button class="shopnowbtn">Shop Now</button>
+        </div>
+        <div>
+            <img src="image/fashion (3).jpg" alt="fashion image" height="400px" width="500px">
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container2">
+        <div class="c1">
+            <div>
+                <h2>We Provide Best</h2>
+                <h2>Customer Experiance</h2>
+            </div>
+            <div>
+                <h2>|| best Shippping Experience</h2>
+            </div>
+        </div>
+
+        <div class="c2">
+
+            <div>
+                <h3><i class="fa regular fa-face-smile"></i>Satisfaction Garentee</h3>
+
+            </div>
+            <div>
+                <h3> <i class="fa regular fa-face-smile"></i>Fast and Free Shipping</h3>
+
+            </div>
+            <div>
+                <h3><i class="fa regular fa-face-smile"></i>Best Customer Experience</h3>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container11">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Ecommerce Project/image/coat (2).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Ecommerce Project/image/pants.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Ecommerce Project/image/coat.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container3">
+        <div>
+            <h1>New Arrivals</h1>
+        </div>
+        <div class="products">
+            <div class="productsbox">
+
+                <img src="image/blackshirt.jpg" alt="" height="300px" width="300px">
+
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p class="item"> BlackShirt</p>
+            </div>
+            <div class="productsbox">
+
+                <img src="image/coat.jpg" alt="" height="300px" width="300px">
+
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> Coat</p>
+            </div>
+
+
+            <div class="productsbox">
+                <img src="image/coat (2).jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+
+                <p> Coat </p>
+            </div>
+            <div class="productsbox">
+                <img src="image/pants.jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> Pants</p>
+            </div>
+
+            <div class="productsbox">
+                <img src="image/whiteshirt.jpg" alt="" height="300px" width="300px">
+
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> WhiteShirt</p>
+            </div>
+            <div class="productsbox">
+                <img src="image/whiteshirt (2).jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> WhiteShirt</p>
+            </div>
+
+            <div class="productsbox">
+                <img src="image/whiteshirt (3).jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> WhiteShirt</p>
+            </div>
+            <div class="productsbox">
+                <img src="image/blackshirt.jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> blackShirt</p>
+            </div>
+
+            <div class="productsbox">
+                <img src="image/coat.jpg" alt="" height="300px" width="300px">
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <p> Coat</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container4">
+        <div>
+            <h1>Most Wanted </h1>
+        </div>
+        <div class="products">
+            <div class="productsbox">
+
+                <img src="image/blackshirt.jpg" alt="" height="300px" width="300px">
+
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> BlackShirt</p>
+            </div>
+            <div class="productsbox">
+
+                <img src="image/coat.jpg" alt="" height="300px" width="300px">
+
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> Coat</p>
+            </div>
+
+
+            <div class="productsbox">
+                <img src="image/coat (2).jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> Coat </p>
+            </div>
+            <div class="productsbox">
+                <img src="image/pants.jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> Pants</p>
+            </div>
+
+            <div class="productsbox">
+                <img src="image/whiteshirt.jpg" alt="" height="300px" width="300px">
+
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> WhiteShirt</p>
+            </div>
+            <div class="productsbox">
+                <img src="image/whiteshirt (2).jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> WhiteShirt</p>
+            </div>
+
+            <div class="productsbox">
+                <img src="image/whiteshirt (3).jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> WhiteShirt</p>
+            </div>
+            <div class="productsbox">
+                <img src="image/blackshirt.jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> blackShirt</p>
+            </div>
+
+            <div class="productsbox">
+                <img src="image/coat.jpg" alt="" height="300px" width="300px">
+                <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+                <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+                <p> Coat</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <center>
+        <h1 id="mycart">My Cart</h1>
+        <ul id="list">
+
+
+
+
+
+
+        </ul>
+
+    </center>
+
+
+
+
+
+</body>
+
+<footer class="footer">
+    <h4> best Shopping</h4>
+    <h4>copyright@ 2024</h4>
+    <div> <a><i class="fa-solid fa-instagram"></i></a>
+        <a><i class="fa-solid fa-facebook"></i></a>
+        <a><i class="fa-solid fa-youtube"></i></a>
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+<script src="index.js"></script>
+
+</html>

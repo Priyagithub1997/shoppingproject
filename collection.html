@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="style.css" rel="stylesheet">
+
+<body>
+
+    <nav class="navbar sticky-top">
+        <div class="navbardiv">
+            <h1>Shopping</h1>
+        </div>
+        <div class="navbarlinks">
+
+
+
+            <a class="navbarlink" href="index.html">Home</a>
+            <a class="navbarlink" href="collection.html"> Collections</a>
+            <a class="navbarlink" href="#mycart"> My Cart</a>
+
+        </div>
+        <div class="toggleicon" onclick="shownavbar()">
+            <i class="fa-solid fa-bars "></i>
+        </div>
+
+    </nav>
+    <div class="sidenavbar">
+        <div class="cancelicon" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="sidenavbarlinks">
+
+
+
+            <a class="sidenavbarlink" href="index.html">Home</a>
+            <a class="sidenavbarlink" href="collection.html"> Collections</a>
+            <a class="sidenavbarlink" href="#mycart"> My Cart</a>
+
+        </div>
+    </div>
+    <div class="collection-products">
+        <form class="searchform">
+
+            <input class="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </form>
+    </div>
+    <div class="products">
+        <div class="productsbox">
+
+            <img src="image/blackshirt.jpg" alt="" height="300px" width="300px">
+
+            <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+            <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+            <p> BlackShirt</p>
+        </div>
+        <div class="productsbox">
+
+            <img src="image/coat.jpg" alt="" height="300px" width="300px">
+
+            <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+
+            <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+            <p> Coat</p>
+        </div>
+
+
+        <div class="productsbox">
+            <img src="image/coat (2).jpg" alt="" height="300px" width="300px">
+            <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+            <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+            <p> Coat </p>
+        </div>
+        <div class="productsbox">
+            <img src="image/pants.jpg" alt="" height="300px" width="300px">
+            <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+            <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+            <p> Pants</p>
+        </div>
+
+        <div class="productsbox">
+            <img src="image/whiteshirt.jpg" alt="" height="300px" width="300px">
+
+            <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+            <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+            <p> WhiteShirt</p>
+        </div>
+        <div class="productsbox">
+            <img src="image/whiteshirt (2).jpg" alt="" height="300px" width="300px">
+            <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+            <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+            <p> WhiteShirt</p>
+        </div>
+
+        <div class="productsbox">
+            <img src="image/whiteshirt (3).jpg" alt="" height="300px" width="300px">
+            <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+            <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+            <p> WhiteShirt</p>
+        </div>
+        <div class="productsbox">
+            <img src="image/blackshirt.jpg" alt="" height="300px" width="300px">
+            <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+            <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+            <p> blackShirt</p>
+        </div>
+        <div class="productsbox">
+            <img src="image/blackshirt.jpg" alt="" height="300px" width="300px">
+
+            <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+            <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+            <p> BlackShirt</p>
+        </div>
+        <div class="productsbox">
+            <img src="image/coat.jpg" alt="" height="300px" width="300px">
+            <button class="collectionshopnow">Shop Now <i class=" fa-solid fa-arrow-right"></i></button>
+
+            <button class="cartbtn" onclick="addtocart(event)">Add to Cart</button>
+            <p> Coat</p>
+        </div>
+    </div>
+
+    <center>
+        <h1 id="mycart">My Cart</h1>
+        <ul id="list">
+
+
+
+
+
+
+        </ul>
+
+    </center>
+
+
+
+
+    <footer class="footer">
+        <h4> best Shopping</h4>
+        <h4>copyright@ 2024</h4>
+        <div> <a><i class="fa-solid fa-instagram" aria-hidden="true"></i></a>
+            <a><i class="fa-solid fa-facebook" aria-hidden="true"></i></a>
+            <a><i class="fa-solid fa-youtube" aria-hidden="true"></i></a>
+        </div>
+</body>
+<script src="index.js"></script>
+
+</html>
